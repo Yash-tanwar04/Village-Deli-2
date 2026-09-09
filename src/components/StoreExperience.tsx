@@ -16,31 +16,31 @@ export const StoreExperience: React.FC = () => {
     {
       title: 'Onsite Flour Mill',
       subtitle: 'Freshly ground. Pure & wholesome.',
-      image: '/assets/experience_flour_mill.jpg',
+      image: '/assets/experience_flour_mill.webp',
       tags: ['Atta', 'Maida', 'Multigrain', 'Besan'],
     },
     {
       title: 'Cold Press Juice',
       subtitle: 'Natural goodness. No compromise.',
-      image: '/assets/experience_cold_press_juice.jpg',
+      image: '/assets/experience_cold_press_juice.webp',
       tags: ['100% Pure', 'Cold-Pressed Daily', 'No Added Sugar'],
     },
     {
       title: 'Fresh Bakery',
       subtitle: 'Freshly baked. Every day.',
-      image: '/assets/experience_fresh_bakery.jpg',
+      image: '/assets/experience_fresh_bakery.webp',
       tags: ['Artisan Bread', 'Pastries', 'Daily Fresh Bakes'],
     },
     {
       title: 'Quick Meals',
       subtitle: 'Hot. Tasty. Made for you.',
-      image: '/assets/experience_quick_meals.jpg',
+      image: '/assets/experience_quick_meals.webp',
       tags: ['Chef Curated', 'Hot & Fresh', 'On-the-Go'],
     },
     {
       title: 'Lounge Area',
       subtitle: 'Relax. Refresh. Recharge.',
-      image: '/assets/experience_lounge_area.jpg',
+      image: '/assets/experience_lounge_area.webp',
       tags: ['Warm Seating', 'Co-Working Space', 'Coffee & Sip'],
     },
   ];
@@ -132,7 +132,7 @@ export const StoreExperience: React.FC = () => {
             {/* Produce Aisle */}
             <div className="md:col-span-7 rounded-2xl overflow-hidden border-4 border-white shadow-xl relative min-h-[320px] group">
               <img
-                src="/assets/store_produce_aisle.jpg"
+                src="/assets/store_produce_aisle.webp"
                 alt="Fresh produce aisle at Village Deli"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -152,7 +152,7 @@ export const StoreExperience: React.FC = () => {
               {/* Bakery Aisle */}
               <div className="rounded-2xl overflow-hidden border-4 border-white shadow-lg relative h-[190px] group">
                 <img
-                  src="/assets/store_bakery_aisle.jpg"
+                  src="/assets/store_bakery_aisle.webp"
                   alt="Bakery and Union Coffee aisle at Village Deli"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -166,7 +166,7 @@ export const StoreExperience: React.FC = () => {
               {/* Family with Cart */}
               <div className="rounded-2xl overflow-hidden border-4 border-white shadow-lg relative h-[210px] group">
                 <img
-                  src="/assets/family_with_cart.jpg"
+                  src="/assets/family_with_cart.webp"
                   alt="Indian family with cart shopping Village Deli staples"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />

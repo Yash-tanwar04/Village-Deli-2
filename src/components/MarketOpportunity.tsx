@@ -117,7 +117,7 @@ export const MarketOpportunity: React.FC = () => {
           {/* Right Showcase: Family Shopping Visual from Page 4 */}
           <div className="lg:col-span-5 relative rounded-2xl overflow-hidden border border-[#234934] shadow-xl min-h-[380px] group">
             <img
-              src="/assets/family_shopping_produce.jpg"
+              src="/assets/family_shopping_produce.webp"
               alt="Indian family shopping for fresh produce and groceries at Village Deli"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />

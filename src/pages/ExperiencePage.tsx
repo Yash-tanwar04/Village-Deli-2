@@ -18,31 +18,31 @@ export const ExperiencePage: React.FC = () => {
     {
       title: 'Onsite Flour Mill',
       subtitle: 'Freshly ground. Pure & wholesome.',
-      image: '/assets/experience_flour_mill.jpg',
+      image: '/assets/experience_flour_mill.webp',
       tag: 'Atta, Maida, Multigrain, Besan',
     },
     {
       title: 'Cold Press Juice',
       subtitle: 'Natural goodness. No compromise.',
-      image: '/assets/experience_cold_press_juice.jpg',
+      image: '/assets/experience_cold_press_juice.webp',
       tag: '100% Pure, Daily Extracted',
     },
     {
       title: 'Fresh Bakery',
       subtitle: 'Freshly baked. Every day.',
-      image: '/assets/experience_fresh_bakery.jpg',
+      image: '/assets/experience_fresh_bakery.webp',
       tag: 'Artisan Breads & Pastries',
     },
     {
       title: 'Quick Meals',
       subtitle: 'Hot. Tasty. Made for you.',
-      image: '/assets/experience_quick_meals.jpg',
+      image: '/assets/experience_quick_meals.webp',
       tag: 'Ready-to-Eat & Snacks',
     },
     {
       title: 'Lounge Area',
       subtitle: 'Relax. Refresh. Recharge.',
-      image: '/assets/experience_lounge_area.jpg',
+      image: '/assets/experience_lounge_area.webp',
       tag: 'Seating & Coffee Break',
     },
   ];
@@ -70,7 +70,7 @@ export const ExperiencePage: React.FC = () => {
             <div>
               <div className="relative h-56 overflow-hidden bg-stone-900">
                 <img
-                  src="/assets/format_waypoint_highway_hub.jpg"
+                  src="/assets/format_waypoint_highway_hub.webp"
                   alt="Waypoint Highway Hub format"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -124,7 +124,7 @@ export const ExperiencePage: React.FC = () => {
             <div>
               <div className="relative h-56 overflow-hidden bg-stone-900">
                 <img
-                  src="/assets/format_neighborhood_express.jpg"
+                  src="/assets/format_neighborhood_express.webp"
                   alt="Neighborhood Express format"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

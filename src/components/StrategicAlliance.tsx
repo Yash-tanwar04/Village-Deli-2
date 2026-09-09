@@ -37,7 +37,7 @@ export const StrategicAlliance: React.FC = () => {
           {/* Main Dual Branded Storefront */}
           <div className="lg:col-span-8 rounded-3xl overflow-hidden border border-[#234934] shadow-2xl relative group bg-[#0d1f15]">
             <img
-              src="/assets/storefront_dual_vita_village_deli.jpg"
+              src="/assets/storefront_dual_vita_village_deli.webp"
               alt="Vita Village Deli dual-branded flagship storefront render"
               className="w-full h-auto object-cover max-h-[500px] group-hover:scale-105 transition-transform duration-700"
             />
@@ -61,7 +61,7 @@ export const StrategicAlliance: React.FC = () => {
           <div className="lg:col-span-4 flex flex-col gap-6">
             <div className="rounded-2xl overflow-hidden border border-[#234934] shadow-lg relative h-48 bg-[#0d1f15]">
               <img
-                src="/assets/store_interior_vitaproducts.jpg"
+                src="/assets/store_interior_vitaproducts.webp"
                 alt="Inside store Vita and Har Hith display counter with fresh bakery and hot meals"
                 className="w-full h-full object-cover"
               />

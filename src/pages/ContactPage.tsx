@@ -18,20 +18,20 @@ export const ContactPage: React.FC = () => {
       name: 'Mr. Yateen Yadav',
       region: 'HARYANA',
       desc: 'Highways & Petrol Pumps across Haryana',
-      image: '/assets/contact_haryana_yateen.png',
+      image: '/assets/contact_haryana_yateen.webp',
     },
     {
       name: 'Mr. Rishab Mehrotra',
       region: 'PUNJAB',
       desc: 'Highway & Urban Network Expansion across Punjab',
-      image: '/assets/contact_punjab_rishab.png',
+      image: '/assets/contact_punjab_rishab.webp',
     },
     {
       name: 'Mr. Udai Pal Singh',
       region: 'ALL OTHER REGIONS',
       subRegion: 'Delhi NCR, UP, Uttarakhand & HP',
       desc: 'Expressway corridors & growing suburbs',
-      image: '/assets/contact_north_india_udai.png',
+      image: '/assets/contact_north_india_udai.webp',
     },
   ];
 

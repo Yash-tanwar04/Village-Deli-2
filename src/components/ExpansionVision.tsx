@@ -132,7 +132,7 @@ export const ExpansionVision: React.FC = () => {
 
             <div className="w-full overflow-hidden rounded-2xl bg-stone-900/50 p-2 flex items-center justify-center">
               <img
-                src="/assets/map_expansion_roadmap.png"
+                src="/assets/map_expansion_roadmap.webp"
                 alt="Map of North India showing Haryana, Punjab, and Phase 2 expansion territories"
                 className="max-h-[380px] w-auto object-contain hover:scale-105 transition-transform duration-500"
               />

@@ -16,7 +16,7 @@ export const HomePage: React.FC = () => {
       tag: 'EXPERIENCE & ARCHITECTURE',
       desc: 'Discover our Waypoint Highway Hubs and Neighborhood Express formats, featuring an onsite flour mill, cold-press juice bar, and fresh bakery.',
       link: '/experience',
-      image: '/assets/format_waypoint_highway_hub.jpg',
+      image: '/assets/format_waypoint_highway_hub.webp',
       stat: '500 – 3,000 SQ.FT.',
       cta: 'Explore Formats',
     },
@@ -25,7 +25,7 @@ export const HomePage: React.FC = () => {
       tag: 'INDUSTRY LANDSCAPE',
       desc: 'Why the scope is massive: rising urbanization, busy dual-income lifestyles, expanding highway corridors, and daily neighborhood demand.',
       link: '/opportunity',
-      image: '/assets/family_shopping_produce.jpg',
+      image: '/assets/family_shopping_produce.webp',
       stat: '₹6+ LAKH CR. MARKET',
       cta: 'View Market Data',
     },
@@ -34,7 +34,7 @@ export const HomePage: React.FC = () => {
       tag: 'FOOD & BEVERAGE BRANDS',
       desc: '6 curated in-house dining brands crafted for dine-in, takeaway, and digital delivery on Zomato and Zepto.',
       link: '/brands',
-      image: '/assets/store_bakery_aisle.jpg',
+      image: '/assets/store_bakery_aisle.webp',
       stat: '6 DISTINCT BRANDS',
       cta: 'Discover Brands',
     },
@@ -43,7 +43,7 @@ export const HomePage: React.FC = () => {
       tag: 'FRANCHISE OPPORTUNITY',
       desc: 'Franchise Invested Company Operated model. Low operational complexity, ₹18–28 Lakhs avg. monthly net revenue, and 7% or MG rent.',
       link: '/investment',
-      image: '/assets/storefront_dual_vita_village_deli.jpg',
+      image: '/assets/storefront_dual_vita_village_deli.webp',
       stat: '₹3,500 / SQ.FT.',
       cta: 'Review Financials',
     },
@@ -52,7 +52,7 @@ export const HomePage: React.FC = () => {
       tag: 'REGIONAL LEADERSHIP',
       desc: 'Designated points of contact for Haryana, Punjab, Delhi NCR, UP, Uttarakhand & HP. Submit highway or urban real estate proposals.',
       link: '/contact',
-      image: '/assets/map_expansion_roadmap.png',
+      image: '/assets/map_expansion_roadmap.webp',
       stat: 'LIMITED TERRITORIES',
       cta: 'Connect With Leaders',
     },
@@ -113,7 +113,7 @@ export const HomePage: React.FC = () => {
           {/* Hero Storefront Image */}
           <div className="relative rounded-2xl md:rounded-3xl overflow-hidden border border-[#234934] shadow-2xl bg-[#091710] group max-w-6xl mx-auto">
             <img
-              src="/assets/storefront_opening_soon.jpg"
+              src="/assets/storefront_opening_soon.webp"
               alt="Village Deli Flagship Storefront"
               className="w-full h-auto object-cover max-h-[560px] transition-transform duration-700 group-hover:scale-[1.01]"
             />

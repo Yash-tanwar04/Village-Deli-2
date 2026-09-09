@@ -79,7 +79,7 @@ export const WhyVillageDeli: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white">
               <img
-                src="/assets/storefront_twilight.jpg"
+                src="/assets/storefront_twilight.webp"
                 alt="Village Deli twilight exterior view with customers entering the well-lit retail store"
                 className="w-full h-auto object-cover max-h-[560px]"
               />

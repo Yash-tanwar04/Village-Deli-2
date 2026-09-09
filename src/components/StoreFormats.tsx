@@ -24,7 +24,7 @@ export const StoreFormats: React.FC = () => {
           <div className="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-lg hover:shadow-2xl hover:border-[#6cb33f] transition-all duration-300 flex flex-col group">
             <div className="relative h-64 overflow-hidden bg-stone-900">
               <img
-                src="/assets/format_waypoint_highway_hub.jpg"
+                src="/assets/format_waypoint_highway_hub.webp"
                 alt="Waypoint Highway Hub format render"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -100,7 +100,7 @@ export const StoreFormats: React.FC = () => {
           <div className="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-lg hover:shadow-2xl hover:border-[#6cb33f] transition-all duration-300 flex flex-col group">
             <div className="relative h-64 overflow-hidden bg-stone-900">
               <img
-                src="/assets/format_neighborhood_express.jpg"
+                src="/assets/format_neighborhood_express.webp"
                 alt="Neighborhood Express format render"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />

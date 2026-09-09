@@ -85,7 +85,7 @@ export const Hero: React.FC = () => {
         {/* Primary Storefront Showcase Render */}
         <div className="relative rounded-2xl md:rounded-3xl overflow-hidden border border-[#234934] shadow-2xl bg-[#091710] group">
           <img
-            src="/assets/storefront_opening_soon.jpg"
+            src="/assets/storefront_opening_soon.webp"
             alt="Village Deli Flagship Storefront with modern glass facade and canopy departments"
             className="w-full h-auto object-cover max-h-[640px] transition-transform duration-700 group-hover:scale-[1.01]"
           />
