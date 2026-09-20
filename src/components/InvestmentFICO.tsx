@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { CheckCircle2, Star, Calculator } from 'lucide-react';
 
 export const InvestmentFICO: React.FC = () => {
@@ -9,9 +10,9 @@ export const InvestmentFICO: React.FC = () => {
   const annualShare = calculatedShare * 12;
 
   const generalTerms = [
-    'Flat 7% of net revenue share, or MG rent — whichever is higher',
+    'Flat 7% of net revenue share — whichever is higher',
     '3-year lock-in period',
-    'Capex fully amortised in 3 years as MG rent',
+    'Capex fully amortised in 3 years',
     'Transparent, scalable and sustainable model',
   ];
 
@@ -24,25 +25,54 @@ export const InvestmentFICO: React.FC = () => {
   ];
 
   return (
-    <section id="investment" className="py-20 md:py-28 bg-[#f4f6ee] text-[#12281c] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section id="investment" className="py-24 md:py-32 bg-[#091710] text-white relative overflow-hidden">
+      {/* Background ambient gradient */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#6cb33f]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#fed100]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Tag and Title */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-[#6cb33f]/15 text-[#3b711e] text-xs font-bold uppercase tracking-wider mb-3 border border-[#6cb33f]/30">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#173323] text-[#7ad048] text-xs font-bold uppercase tracking-wider mb-3 border border-[#6cb33f]/30"
+          >
             THE INVESTMENT
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-[#0d1f15] tracking-tight mb-4">
+          </motion.div>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-white tracking-tight mb-4"
+          >
             The FICO Model
-          </h2>
-          <p className="text-stone-700 text-base sm:text-lg font-medium">
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-stone-300 text-base sm:text-lg font-light leading-relaxed"
+          >
             Franchise Invested Company Operated — a win-win partnership designed for high returns, hassle-free operations and long-term value creation.
-          </p>
+          </motion.p>
         </div>
 
-        {/* 3 Prominent Investment Cards from Page 13 */}
+        {/* 3 Prominent Investment Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {/* Card 1: Rate per sq ft */}
-          <div className="bg-[#6cb33f] text-white p-8 rounded-3xl shadow-xl flex flex-col justify-between relative overflow-hidden group">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ y: -6 }}
+            className="bg-[#6cb33f] text-white p-8 rounded-3xl shadow-xl flex flex-col justify-between relative overflow-hidden group transition-all duration-300"
+          >
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-[#0d1f15] block mb-2">
@@ -56,13 +86,20 @@ export const InvestmentFICO: React.FC = () => {
               </p>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-white/20 text-xs text-white/90">
+            <div className="mt-6 pt-4 border-t border-white/20 text-xs text-white/90 font-medium">
               <span className="font-bold">+ ₹5,00,000 signup fee</span> (interior design package)
             </div>
-          </div>
+          </motion.div>
 
           {/* Card 2: Store Size */}
-          <div className="bg-[#fed100] text-[#0d1f15] p-8 rounded-3xl shadow-xl flex flex-col justify-between relative overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            whileHover={{ y: -6 }}
+            className="bg-[#fed100] text-[#0d1f15] p-8 rounded-3xl shadow-xl flex flex-col justify-between relative overflow-hidden group transition-all duration-300"
+          >
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-[#0d1f15]/70 block mb-2">
                 STORE SPECIFICATIONS
@@ -78,83 +115,113 @@ export const InvestmentFICO: React.FC = () => {
             <div className="mt-6 pt-4 border-t border-black/10 text-xs font-medium text-[#0d1f15]/80">
               Primarily on highways & petrol pumps (24/7 license at all Haryana locations)
             </div>
-          </div>
+          </motion.div>
 
-          {/* Card 3: 50 Locations */}
-          <div className="bg-[#173323] text-white p-8 rounded-3xl shadow-xl flex flex-col justify-between border border-[#6cb33f]/40 relative overflow-hidden">
+          {/* Card 3: 50+ Locations (TARGET) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            whileHover={{ y: -6 }}
+            className="bg-[#12281c] text-white p-8 rounded-3xl shadow-xl flex flex-col justify-between border border-[#234934] hover:border-[#6cb33f] relative overflow-hidden group transition-all duration-300"
+          >
             <div>
               <span className="text-xs uppercase tracking-widest font-bold text-[#7ad048] block mb-2">
-                AGGRESSIVE EXPANSION PLAN
+                TARGET
               </span>
               <div className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-stat tracking-tight text-white mb-2">
-                50 LOCATIONS
+                50+ LOCATIONS
               </div>
               <p className="text-sm text-stone-200">
                 in Haryana in the next 12 months
               </p>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-white/10 text-xs text-[#fed100] font-medium">
-              Targeting 50+ locations in Punjab in Phase 1
+            <div className="mt-6 pt-4 border-t border-white/10 text-xs text-[#fed100] font-bold tracking-wide">
+              50+ LOCATIONS TARGETED in Punjab in Phase 1
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* 2-Column Section: General Terms on Left, Collaboration on Right */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16">
           {/* General Terms Card */}
-          <div className="lg:col-span-6 bg-white p-8 rounded-3xl border border-stone-200 shadow-md">
-            <h3 className="text-xs font-bold text-[#3b711e] uppercase tracking-wider mb-4">
-              GENERAL TERMS
-            </h3>
-            <div className="space-y-4">
-              {generalTerms.map((term, idx) => (
-                <div key={idx} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-[#6cb33f]/15 text-[#3b711e] flex items-center justify-center shrink-0 mt-0.5">
-                    <CheckCircle2 className="w-4 h-4" />
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-6 bg-[#12281c] p-8 sm:p-10 rounded-3xl border border-[#234934] shadow-xl flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-xs font-bold text-[#7ad048] uppercase tracking-wider">
+                  GENERAL TERMS
+                </h3>
+                <span className="text-[11px] font-semibold text-[#7ad048] bg-[#173323] border border-[#6cb33f]/30 px-3 py-1 rounded-full">
+                  FICO Structure
+                </span>
+              </div>
+              <div className="space-y-4">
+                {generalTerms.map((term, idx) => (
+                  <div key={idx} className="flex items-start gap-3.5">
+                    <div className="w-6 h-6 rounded-full bg-[#173323] text-[#7ad048] border border-[#234934] flex items-center justify-center shrink-0 mt-0.5">
+                      <CheckCircle2 className="w-4 h-4" />
+                    </div>
+                    <span className="text-sm sm:text-base font-medium text-stone-200 leading-snug">
+                      {term}
+                    </span>
                   </div>
-                  <span className="text-sm font-medium text-stone-800 leading-relaxed">
-                    {term}
-                  </span>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
+
+            <div className="mt-8 pt-5 border-t border-white/10 text-xs text-stone-400 leading-relaxed">
+              <strong className="text-white">Company Operated:</strong> Turnkey inventory, billing, staffing, and 24/7 operational management handled end-to-end.
+            </div>
+          </motion.div>
 
           {/* Strategic Collaboration Box */}
-          <div className="lg:col-span-6 bg-gradient-to-br from-[#173323] to-[#0d1f15] text-white p-8 rounded-3xl border border-[#6cb33f]/30 shadow-md flex flex-col justify-between">
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-6 bg-gradient-to-br from-[#173323] via-[#12281c] to-[#0d1f15] text-white p-8 sm:p-10 rounded-3xl border border-[#6cb33f]/30 shadow-xl flex flex-col justify-between"
+          >
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-[#fed100] block mb-2">
                 GOVERNMENT & COOPERATIVE STRENGTH
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold font-serif text-white mb-4">
+              <h3 className="text-2xl sm:text-3xl font-bold font-serif text-white mb-4">
                 In Strategic Collaboration With
               </h3>
-              <p className="text-xs sm:text-sm text-stone-300 leading-relaxed mb-6">
+              <p className="text-xs sm:text-sm text-stone-300 leading-relaxed mb-6 font-light">
                 Backing each location with established state-level cooperative brand equity, robust cold chains, and high everyday consumer demand.
               </p>
             </div>
 
-            <div className="bg-white/95 p-4 rounded-2xl flex items-center justify-center">
+            <div className="bg-white/95 p-5 rounded-2xl flex items-center justify-center shadow-inner">
               <img
                 src="/assets/collab_har_hith_vita.png"
                 alt="Strategic Collaboration: Har Hith Store + Vita"
                 className="max-h-16 w-auto object-contain"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        {/* Financial Projection & Investor Value Section (Pitch Deck Page 14) */}
+        {/* Financial Projection & Investor Value Section */}
         <div className="bg-[#0d1f15] text-white rounded-3xl p-8 sm:p-12 border border-[#234934] shadow-2xl mb-14">
           <div className="max-w-3xl mb-12">
-            <div className="text-xs font-bold text-[#7ad048] tracking-widest uppercase mb-2">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#173323] text-[#7ad048] text-xs font-bold uppercase tracking-wider mb-3 border border-[#6cb33f]/30">
               THE RETURNS
             </div>
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-white mb-3">
               Financial Projection & Investor Value
             </h3>
-            <p className="text-stone-300 text-sm sm:text-base">
+            <p className="text-stone-300 text-sm sm:text-base font-light">
               Predictable, annuity-like cash flows secured by high-margin merchandise and round-the-clock footfall.
             </p>
           </div>
@@ -191,7 +258,7 @@ export const InvestmentFICO: React.FC = () => {
                     Revenue Share Model
                   </div>
                   <div className="text-2xl sm:text-3xl font-extrabold text-white font-stat">
-                    7% OR MG RENT
+                    7% NET REVENUE SHARE
                   </div>
                   <div className="text-xs text-stone-400 mt-1">
                     Whichever is higher
@@ -201,13 +268,13 @@ export const InvestmentFICO: React.FC = () => {
 
               <div className="mt-6 pt-4 border-t border-white/10">
                 <span className="text-[11px] text-stone-400 italic">
-                  *Figures are indicative and subject to location, format and market conditions.
+                  *Figures are indicative and subject to location, format and market conditions. Flat 7% of net revenue share — whichever is higher.
                 </span>
               </div>
             </div>
 
             {/* Strong Value for Investors (5 Star Points) */}
-            <div className="lg:col-span-6 space-y-4">
+            <div className="lg:col-span-6 space-y-3.5">
               <h4 className="text-lg font-bold font-serif text-[#7ad048] uppercase tracking-wider mb-4">
                 STRONG VALUE FOR INVESTORS
               </h4>
@@ -215,7 +282,7 @@ export const InvestmentFICO: React.FC = () => {
               {investorValuePoints.map((val, idx) => (
                 <div
                   key={idx}
-                  className="bg-[#173323]/70 border border-[#234934] p-4 rounded-xl flex items-start gap-3 hover:border-[#6cb33f]/50 transition-colors"
+                  className="bg-[#173323]/70 border border-[#234934] p-4 rounded-xl flex items-start gap-3 hover:border-[#6cb33f]/50 hover:bg-[#173323] transition-all"
                 >
                   <div className="w-7 h-7 rounded-full bg-[#6cb33f] text-[#0d1f15] flex items-center justify-center shrink-0 mt-0.5 font-bold">
                     <Star className="w-4 h-4 fill-[#0d1f15]" />
@@ -272,7 +339,7 @@ export const InvestmentFICO: React.FC = () => {
                   ₹{Math.round(calculatedShare).toLocaleString('en-IN')}
                 </span>
                 <span className="text-[11px] text-stone-400 block mt-1">
-                  (Or MG rent, whichever is higher)
+                  (Whichever is higher)
                 </span>
               </div>
 
@@ -293,7 +360,7 @@ export const InvestmentFICO: React.FC = () => {
 
         {/* Bottom Pitch Deck Quote */}
         <div className="text-center max-w-2xl mx-auto">
-          <p className="text-lg font-serif italic text-stone-700">
+          <p className="text-lg font-serif italic text-stone-300 font-light">
             “Village DELI is not just a store. It's a lifestyle enabler, a trust builder, and a future-ready business.”
           </p>
         </div>

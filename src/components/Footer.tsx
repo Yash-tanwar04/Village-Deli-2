@@ -45,6 +45,7 @@ export const Footer: React.FC = () => {
               <li><Link to="/" className="hover:text-[#7ad048] transition-colors">Home</Link></li>
               <li><Link to="/experience" className="hover:text-[#7ad048] transition-colors">Store Experience & Formats</Link></li>
               <li><Link to="/opportunity" className="hover:text-[#7ad048] transition-colors">Market Opportunity</Link></li>
+              <li><Link to="/expansion" className="hover:text-[#7ad048] transition-colors">Expansion Roadmap</Link></li>
             </ul>
           </div>
 
@@ -60,7 +61,7 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold uppercase tracking-wider text-stone-400 mb-3">Territories</h4>
             <ul className="space-y-1.5 text-stone-400">
-              <li>• Phase 0: Haryana</li>
+              <li>• Pilot: Haryana</li>
               <li>• Phase 1: Punjab</li>
               <li>• Phase 2: Delhi NCR, UP, UK, HP</li>
             </ul>

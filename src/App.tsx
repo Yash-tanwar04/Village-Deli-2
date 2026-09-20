@@ -8,6 +8,7 @@ import { ExperiencePage } from './pages/ExperiencePage';
 import { OpportunityPage } from './pages/OpportunityPage';
 import { BrandsPage } from './pages/BrandsPage';
 import { InvestmentPage } from './pages/InvestmentPage';
+import { ExpansionPage } from './pages/ExpansionPage';
 import { ContactPage } from './pages/ContactPage';
 
 export const App: React.FC = () => {
@@ -23,6 +24,7 @@ export const App: React.FC = () => {
             <Route path="/opportunity" element={<OpportunityPage />} />
             <Route path="/brands" element={<BrandsPage />} />
             <Route path="/investment" element={<InvestmentPage />} />
+            <Route path="/expansion" element={<ExpansionPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
