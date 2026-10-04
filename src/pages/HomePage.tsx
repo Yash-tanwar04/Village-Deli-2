@@ -218,15 +218,10 @@ export const HomePage: React.FC = () => {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/15 group">
                 <img
-                  src="/assets/mockup/home_hero_store.webp"
+                  src="/assets/mockup/home_hero_store.jpg"
                   alt="VillageDELI 24/7 Storefront and Fresh Departments"
-                  className="w-full h-80 sm:h-[420px] lg:h-[460px] object-cover object-center group-hover:scale-102 transition-transform duration-700"
+                  className="w-full h-auto aspect-[1024/659] object-cover object-center group-hover:scale-102 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-4 left-4 bg-[#0d1f15]/85 backdrop-blur-md text-white text-[11px] font-semibold px-3 py-1.5 rounded-full border border-white/20 flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#6cb33f] animate-pulse" />
-                  <span>Open 24/7 • Fresh Stock Updated Hourly</span>
-                </div>
               </div>
             </motion.div>
           </div>
